@@ -3,7 +3,22 @@ body,html{
 }
 body {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
+}
+p{
+  margin: 1rem;
+}
+.Sans{
+  background-color: rgb(255 0 0 / 0.3);
+  font-family: sans-serif;
+}
+.Serif{
+  background-color: rgb(0 255 0 / 0.3);
+  font-family: serif;
+}
+.Handwrite{
+  background-color: rgb(0 0 255 / 0.3);
+  font-family: 'Caveat', cursive;
 }
