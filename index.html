@@ -67,8 +67,8 @@
       let date = new Date("2019-08-24 22:39");
       let scanDay = new Date("2020-10-24 23:50");//66777
       let now = new Date();
-      let messageInDay = Math.round(66777/((scanDay-date)/86400000));
-      $("#Card3").html(`~ ${(Math.round((now-date)/8640*messageInDay)/10000).toFixed(4)} 📧 (сообщений)`);
+      let messageInDay = 66777/((scanDay-date)/86400000);
+      $("#Card3").html(`~ ${((now-date)/8640*messageInDay/10000).toFixed(4)} 📧 (сообщений)`);
     }
   </script>
 </body>
