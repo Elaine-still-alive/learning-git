@@ -442,6 +442,7 @@
         weekBool = true;
         $("#buttonOdd").html("Нечетная неделя <span class='badge badge-warning'>Now!</span>");
       }
+      |//я выпил сейчас пива и пойду спать
       //Меняем актуальное рассписание
       let day = new Date().getDay();
       $("#dayTimetableHD").html(``) //Очищаем заголовок сегоднешнего дня
@@ -523,7 +524,7 @@
     }
     setInterval(() => weekType(), 100);
 //тут все супер идеально, поэтому я просто напишу комментарий
-    //Смена css стилей страницы 
+    //Смена css стилей страницы
     $("#customSwitch").click(() => {
       if($("#customSwitch").prop('checked')) {
         $("#styleLink").attr("href", "css/dark_theme_styles.css");
