@@ -19,19 +19,34 @@
       <div class="col-12 mb-5">
         <h6 class="text-center Nunito font-weight-normal">Спонсор Московский Техничсекий Университет Связи и Информатики <br> и комната 1414 (кто знает - тот знает).</h6>
       </div>
-      <div class="col-3 mx-3 Nunito red block">
+      <div class="col-3 m-3 Nunito color1 block" onclick="window.open(`https://regnum.ru/news/society/2996497.html`);">
         <p>Артем Белый выкурил уже</p>
         <p id="Card1"></p>
         <p class="card-link">Подробнее <span class="oi oi-arrow-right"></span></p>
       </div>
-      <div class="col-3 mx-3 Nunito green block">
+      <div class="col-3 m-3 Nunito color2 block" onclick="window.open(`https://vk.com/schrodinger__meow`);">
         <p>Данилов Максим выпил</p>
         <p id="Card2"></p>
         <p class="card-link">Подробнее <span class="oi oi-arrow-right"></span></p>
       </div>
-      <div class="col-3 mx-3 Nunito blue block">
-        <p>Во флуде БВТ1905 уже</p>
+      <div class="col-3 m-3 Nunito color3 block">
+        <p>Во флуде БВТ1905 отправили</p>
         <p id="Card3"></p>
+        <p class="card-link">Подробнее <span class="oi oi-arrow-right"></span></p>
+      </div>
+      <div class="col-3 m-3 Nunito color4 block" onclick="window.open(`https://cdn24.img.ria.ru/images/sharing/article/1549718714.jpg?15496546401548159726`);">
+        <p>Юра Нестеров рассказал</p>
+        <p id="Card4"></p>
+        <p class="card-link">Подробнее <span class="oi oi-arrow-right"></span></p>
+      </div>
+      <div class="col-3 m-3 Nunito color5 block" onclick="window.open(`https://vk.com/bllfres`);">
+        <p>Света Маврина спасла</p>
+        <p id="Card5"></p>
+        <p class="card-link">Подробнее <span class="oi oi-arrow-right"></span></p>
+      </div>
+      <div class="col-3 m-3 Nunito color6 block" onclick="window.open(`https://www.twitch.tv/eska_skl`);">
+        <p>Оля Звягина провела</p>
+        <p id="Card6"></p>
         <p class="card-link">Подробнее <span class="oi oi-arrow-right"></span></p>
       </div>
     </div>
@@ -48,19 +63,22 @@
         Card1();
         Card2();
         Card3();
-      }, 10);
+        Card4();
+        Card5();
+        Card6();
+      }, 4);
     });
 
     function Card1() {
       let date = new Date("2019-09-01 00:00");
       let now = new Date();
-      $("#Card1").html(`${(Math.round((now-date)/8640*11)/10000).toFixed(4)} 🚬 (сигарет)`);
+      $("#Card1").html(`${(Math.round((now-date)/8640*10)/10000).toFixed(3)} 🚬 (сигарет)`);
     }
 
     function Card2() {
       let date = new Date("2019-09-01 00:00");
       let now = new Date();
-      $("#Card2").html(`${(Math.round((now-date)/8640*3)/10000).toFixed(4)} ⚡ (энергетиков)`);
+      $("#Card2").html(`${(Math.round((now-date)/8640*1.5)/10000).toFixed(1)} ⚡ (энергетиков)`);
     }
 
     function Card3() {
@@ -69,6 +87,22 @@
       let now = new Date();
       let messageInDay = 66777/((scanDay-date)/86400000);
       $("#Card3").html(`~ ${((now-date)/8640*messageInDay/10000).toFixed(4)} 📧 (сообщений)`);
+    }
+
+    function Card4() {
+      let date = new Date("2019-09-01 00:00");
+      let now = new Date();
+      $("#Card4").html(`${(Math.round((now-date)/8640*4)/10000).toFixed(2)} 🚇 (фактов о метро)`);
+    }
+    function Card5() {
+      let date = new Date("2019-09-01 00:00");
+      let now = new Date();
+      $("#Card5").html(`${(Math.round((now-date)/8640*0.081)/10000).toFixed(0)} 🎓 (студентов)`);
+    }
+    function Card6() {
+      let date = new Date("2020-10-14 00:00");
+      let now = new Date();
+      $("#Card6").html(`${(Math.round((now-date)/8640*0.181)/10000).toFixed(0)} 🎮 (стрима)`);
     }
   </script>
 </body>

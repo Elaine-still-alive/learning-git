@@ -13,19 +13,36 @@ p{
   font-family: 'Nunito', sans-serif;
 }
 .block{
-    border-radius: 5px
+    border-radius: 5px;
+    transition: all 0.3s;
 }
-.red{
-  background-color: rgb(255 0 0 / 0.3);
+.block:hover,.block:active{
+  box-shadow: 0 0 20px 2px rgb(255 255 255 / 0.1);
+}
+.block:active{
+  mix-blend-mode: luminosity;
+  transform: scale(1.1);
+}
+.color1{
+  background-color: #FF810066;
   /* font-family: sans-serif; */
 }
-.green{
-  background-color: rgb(0 255 0 / 0.3);
+.color2{
+  background-color: #FFB30066;
   /* font-family: serif; */
 }
-.blue{
-  background-color: rgb(0 0 255 / 0.3);
+.color3{
+  background-color: #FF230066;
   /* font-family: 'Caveat', cursive; */
+}
+.color4{
+  background-color: #C561D366;
+}
+.color5{
+ background-color: 	#EE6B9C66;
+}
+.color6{
+ background-color: #946BD666;
 }
 .card-link{
   font-size: 0.8rem;
